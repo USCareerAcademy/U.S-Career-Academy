@@ -1,0 +1,428 @@
+/* ========================================
+   U.S. Career Academy - Responsive Design
+   ======================================== */
+
+/* Import CSS Variables */
+@import url('variables.css');
+
+/* ========================================
+   Extra Large Devices (1200px and up)
+   ======================================== */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--container-xl);
+    }
+}
+
+/* ========================================
+   Large Devices (992px to 1199px)
+   ======================================== */
+
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .placement-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* ========================================
+   Navigation Dropdown Responsive Styles
+   ======================================== */
+
+@media (max-width: 991px) {
+    .dropdown-menu {
+        min-width: 180px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    .dropdown-menu.active {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu {
+        min-width: 160px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    .dropdown-menu.active {
+        transform: translateX(-50%) translateY(0);
+    }
+    
+    .dropdown-item {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* ========================================
+   Medium Devices (768px to 991px)
+   ======================================== */
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    h1 {
+        font-size: var(--font-size-4xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+    
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .placement-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: var(--container-md);
+        margin: 0 auto;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-4px);
+    }
+    
+    .instructor-image {
+        height: 220px;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .navbar-nav {
+        gap: var(--spacing-md);
+    }
+    
+    .navbar-link {
+        font-size: var(--font-size-sm);
+    }
+    
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
+}
+
+/* ========================================
+   Small Devices (576px to 767px)
+   ======================================== */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+    
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .placement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .roadmap::before {
+        left: 16px;
+    }
+    
+    .roadmap-item {
+        padding-left: var(--spacing-2xl);
+    }
+    
+    .roadmap-marker {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-base);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-base);
+    }
+    
+    .navbar {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .navbar-container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+    
+    .card {
+        padding: var(--spacing-lg);
+    }
+    
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+    
+    .btn-lg {
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: var(--font-size-base);
+    }
+    
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* ========================================
+   Extra Small Devices (375px to 575px)
+   ======================================== */
+
+@media (max-width: 575px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-xl);
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-sm);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .stat-label {
+        font-size: var(--font-size-base);
+    }
+    
+    .placement-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-price {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+        font-size: var(--font-size-xl);
+    }
+    
+    .course-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .instructor-skills {
+        gap: var(--spacing-xs);
+    }
+    
+    .skill-tag {
+        font-size: var(--font-size-xs);
+        padding: 2px var(--spacing-xs);
+    }
+    
+    .faq-item summary {
+        font-size: var(--font-size-base);
+    }
+    
+    .section-header {
+        margin-bottom: var(--spacing-xl);
+    }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+    .navbar,
+    .footer,
+    .btn,
+    .hero-buttons {
+        display: none;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
+
+/* ========================================
+   Reduced Motion
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ========================================
+   High Contrast Mode
+   ======================================== */
+
+@media (prefers-contrast: high) {
+    :root {
+        --color-border: #000000;
+        --color-text-light: #000000;
+    }
+    
+    .card,
+    .btn,
+    .navbar {
+        border: 2px solid #000000;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+}
+
+/* ========================================
+   Landscape Orientation
+   ======================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+}
