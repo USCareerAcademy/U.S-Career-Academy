@@ -37,6 +37,102 @@
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
         }
         
+        /* Copy hero title styling from home page */
+        .hero .hero-title {
+            color: white !important;
+            font-weight: 600 !important;
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: white !important;
+            background-clip: unset !important;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+            animation: none !important;
+            filter: none !important;
+            transform: none !important;
+            font-size: 2.320032em !important;
+        }
+        
+        /* Reduce About page sections by 10% */
+        /* Mission & Vision Section */
+        #mission-heading ~ .section:first-of-type {
+            padding: calc(var(--spacing-2xl) * 0.8) 0 !important;
+        }
+        
+        #mission-heading ~ .section:first-of-type .section-header {
+            margin-bottom: calc(var(--spacing-xl) * 0.8) !important;
+        }
+        
+        #mission-heading ~ .section:first-of-type .section-title {
+            font-size: 0.8em !important;
+        }
+        
+        #mission-heading ~ .section:first-of-type .section-subtitle {
+            font-size: 0.8em !important;
+        }
+        
+        #mission-heading ~ .section:first-of-type p {
+            font-size: 0.8em !important;
+        }
+        
+        /* Core Values Section */
+        #values-heading ~ .section {
+            padding: calc(var(--spacing-2xl) * 0.8) 0 !important;
+        }
+        
+        #values-heading ~ .section .section-header {
+            margin-bottom: calc(var(--spacing-xl) * 0.8) !important;
+        }
+        
+        #values-heading ~ .section .section-title {
+            font-size: 0.8em !important;
+        }
+        
+        #values-heading ~ .section .section-subtitle {
+            font-size: 0.8em !important;
+        }
+        
+        #values-heading ~ .section .card-body h4 {
+            font-size: 0.8em !important;
+        }
+        
+        #values-heading ~ .section .card-body p {
+            font-size: 0.8em !important;
+        }
+        
+        /* Leadership Section */
+        #team-heading ~ .section {
+            padding: calc(var(--spacing-2xl) * 0.8) 0 !important;
+        }
+        
+        #team-heading ~ .section .section-header {
+            margin-bottom: calc(var(--spacing-xl) * 0.8) !important;
+        }
+        
+        #team-heading ~ .section .section-title {
+            font-size: 0.8em !important;
+        }
+        
+        #team-heading ~ .section .section-subtitle {
+            font-size: 0.8em !important;
+        }
+        
+        #team-heading ~ .section .instructor-card {
+            transform: scale(0.8);
+            transform-origin: top center;
+        }
+        
+        #team-heading ~ .section .instructor-name {
+            font-size: 0.8em !important;
+        }
+        
+        #team-heading ~ .section .instructor-role {
+            font-size: 0.8em !important;
+        }
+        
+        #team-heading ~ .section .instructor-experience {
+            font-size: 0.8em !important;
+        }
+        
         /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
@@ -193,7 +289,7 @@
             </div>
             <div class="text-center">
                 <p>To empower aspiring professionals with practical, high-impact data analysis training, real-world project experience, and corporate readiness tools to secure their dream entry-level roles.</p>
-                <h2 class="section-title" style="margin-top: var(--spacing-2xl);">Our Vision</h2>
+                <h2 id="vision-heading" class="section-title" style="margin-top: var(--spacing-2xl);">Our Vision</h2>
                 <p>To become the launchpad for the next generation of business analysts, empowering young talent to build thriving, data-driven careers in the global corporate landscape.</p>
             </div>
         </div>
@@ -253,48 +349,6 @@
                     <div class="card-body">
                         <h4>Excellence</h4>
                         <p>We pursue excellence in everything we do - from curriculum design to student support, from teaching methods to placement assistance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="section section-light" aria-labelledby="why-us-heading">
-        <div class="container">
-            <div class="section-header">
-                <h2 id="why-us-heading" class="section-title">Why Choose U.S. Career Academy?</h2>
-                <p class="section-subtitle">What makes us different from other training institutions</p>
-            </div>
-            <div class="grid grid-2 gap-xl items-center">
-                <div class="grid grid-2 gap-lg">
-                    <div class="flex items-start gap-md">
-                        <div class="feature-icon" aria-hidden="true">🎯</div>
-                        <div>
-                            <h4>Industry-Driven Curriculum</h4>
-                            <p>Our curriculum is designed by industry experts and updated regularly to match current market requirements and trends.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-md">
-                        <div class="feature-icon" aria-hidden="true"></div>
-                        <div>
-                            <h4>Hands-on Projects</h4>
-                            <p>Work on 20+ real-world projects that mirror actual business scenarios and build a strong portfolio.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-md">
-                        <div class="feature-icon" aria-hidden="true">💼</div>
-                        <div>
-                            <h4>Placement Assistance</h4>
-                            <p>Dedicated placement cell with 95% success rate and strong industry connections for job placements.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-md">
-                        <div class="feature-icon" aria-hidden="true">📈</div>
-                        <div>
-                            <h4>Career Support</h4>
-                            <p>Comprehensive career guidance including resume building, interview preparation, and career counseling.</p>
-                        </div>
                     </div>
                 </div>
             </div>

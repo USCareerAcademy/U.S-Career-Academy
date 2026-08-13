@@ -464,13 +464,6 @@
     }
 }
 
-/* Learning Roadmap Section - Mobile */
-@media (max-width: 767px) {
-    .learning-roadmap-section .grid-4 {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* CTA Section - Mobile */
 @media (max-width: 767px) {
     .cta-section .flex {

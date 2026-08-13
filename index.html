@@ -46,6 +46,12 @@
             animation: none !important;
             filter: none !important;
             transform: none !important;
+            font-size: 2.320032em !important;
+        }
+        
+        /* Override hero subtitle styling */
+        .hero .hero-subtitle {
+            font-size: 0.9em !important;
         }
         
         /* Professional hero background - Option A (Recommended) */
@@ -91,69 +97,27 @@
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
         }
 
-        /* Learning Roadmap Section - Reduced size by 70% then increased by 30% */
-        .learning-roadmap-section {
-            padding: var(--spacing-xl) 0 !important;
-        }
-        
-        .learning-roadmap-section .section-header {
-            margin-bottom: var(--spacing-lg) !important;
-        }
-        
-        .learning-roadmap-section .roadmap {
-            transform: scale(0.78);
-            transform-origin: top center;
-        }
-        
-        .learning-roadmap-section .roadmap-item {
-            margin-bottom: 0.5rem !important;
-        }
-        
-        .learning-roadmap-section .roadmap-marker {
-            width: 2.5rem !important;
-            height: 2.5rem !important;
-            font-size: 0.9rem !important;
-        }
-        
-        .learning-roadmap-section .roadmap-title {
-            font-size: 0.85em !important;
-        }
-        
-        .learning-roadmap-section .roadmap-description {
-            font-size: 0.8em !important;
-            line-height: 1.3 !important;
-        }
-        
-        .learning-roadmap-section .roadmap-arrow {
-            font-size: 0.9em !important;
-            margin: 0.3rem 0 !important;
-        }
-        
-        /* Why Choose Section - Reduced font size by 30% and section by 40%, then increased by 50%, then 10% more, then 30% more, then reduced by 10%, then reduced by 5% more */
+        /* Why Choose Section - Reduced font size by 30% and section by 40%, then increased by 50%, then 10% more, then 30% more, then reduced by 10%, then reduced by 5% more, now 4-grid view, reduced by 20% more, increased by 20% */
         .why-choose-section {
-            padding: calc(var(--spacing-2xl) * 1.11) 0 !important;
+            padding: calc(var(--spacing-2xl) * 1.0656) 0 !important;
         }
         
         .why-choose-section .section-header {
-            margin-bottom: calc(var(--spacing-xl) * 1.11) !important;
+            margin-bottom: calc(var(--spacing-xl) * 1.0656) !important;
         }
         
-        .why-choose-section .features-grid {
-            transform: scale(1.1);
+        .why-choose-section .grid-4 {
+            transform: scale(1.056);
             transform-origin: top center;
         }
         
-        .why-choose-section .feature-title {
+        .why-choose-section .card-body h4 {
             font-size: 0.7em !important;
         }
         
-        .why-choose-section .feature-description {
+        .why-choose-section .card-body p {
             font-size: 0.7em !important;
             line-height: 1.3 !important;
-        }
-        
-        .why-choose-section .feature-icon {
-            font-size: 0.8em !important;
         }
         
         /* What Sets Us Apart Section - Font size reduced by 20%, section reduced by 10%, then font reduced by 10% more, section increased by 5% */
@@ -166,19 +130,6 @@
         }
         
         .what-sets-apart-section .card-body p {
-            font-size: 0.72em !important;
-        }
-        
-        /* Learning Roadmap Section - Now matches What Sets Us Apart section */
-        .learning-roadmap-section {
-            padding: calc(var(--spacing-2xl) * 0.945) 0 !important;
-        }
-        
-        .learning-roadmap-section .card-body h4 {
-            font-size: 0.72em !important;
-        }
-        
-        .learning-roadmap-section .card-body p {
             font-size: 0.72em !important;
         }
         
@@ -426,51 +377,60 @@
                 <h2 id="features-heading" class="section-title">Why Choose U.S. Career Academy?</h2>
                 <p class="section-subtitle">We provide comprehensive training with industry-relevant curriculum and hands-on experience</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">👨‍🏫</div>
-                    <h3 class="feature-title">Industry Experts</h3>
-                    <p class="feature-description">Learn from professionals with 10+ years of experience in top companies</p>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Industry Experts</h4>
+                        <p>Learn from professionals with 10+ years of experience in top companies</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">📊</div>
-                    <h3 class="feature-title">Hands-on Projects</h3>
-                    <p class="feature-description">Work on 15+ real-world projects to build your portfolio</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Hands-on Projects</h4>
+                        <p>Work on 15+ real-world projects to build your portfolio</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🎥</div>
-                    <h3 class="feature-title">Live Classes</h3>
-                    <p class="feature-description">Interactive live sessions with real-time doubt clearing</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Live Classes</h4>
+                        <p>Interactive live sessions with real-time doubt clearing</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">📹</div>
-                    <h3 class="feature-title">Recorded Sessions</h3>
-                    <p class="feature-description">Lifetime access to all recorded sessions for revision</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Recorded Sessions</h4>
+                        <p>Lifetime access to all recorded sessions for revision</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">💼</div>
-                    <h3 class="feature-title">Career Support</h3>
-                    <p class="feature-description">Complete career guidance and placement assistance</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Career Support</h4>
+                        <p>Complete career guidance and placement assistance</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">📄</div>
-                    <h3 class="feature-title">Resume Building</h3>
-                    <p class="feature-description">Professional resume review and optimization services</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Resume Building</h4>
+                        <p>Professional resume review and optimization services</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🎯</div>
-                    <h3 class="feature-title">Interview Preparation</h3>
-                    <p class="feature-description">Mock interviews and interview preparation guidance</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Interview Preparation</h4>
+                        <p>Mock interviews and interview preparation guidance</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🏆</div>
-                    <h3 class="feature-title">Certification</h3>
-                    <p class="feature-description">Industry-recognized certificate upon course completion</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Certification</h4>
+                        <p>Industry-recognized certificate upon course completion</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">∞</div>
-                    <h3 class="feature-title">Lifetime Access</h3>
-                    <p class="feature-description">Access course content forever, including future updates</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Lifetime Access</h4>
+                        <p>Access course content forever, including future updates</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -530,84 +490,6 @@
                     <div class="card-body">
                         <h4>Personal Mentoring</h4>
                         <p>1-on-1 mentoring sessions for personalized guidance</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Learning Roadmap Section -->
-    <section class="section section-light learning-roadmap-section" aria-labelledby="roadmap-heading">
-        <div class="container">
-            <div class="section-header">
-                <h2 id="roadmap-heading" class="section-title">Your Learning Roadmap</h2>
-                <p class="section-subtitle">A structured path from beginner to job-ready professional</p>
-            </div>
-            <div class="grid grid-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Excel Fundamentals</h4>
-                        <p>Master basic to advanced Excel functions, formulas, and data analysis techniques.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>SQL & Database Management</h4>
-                        <p>Learn SQL queries, database design, and data manipulation at scale.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Power BI & Tableau</h4>
-                        <p>Create stunning dashboards and visualizations for business intelligence.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Python Powerhouse</h4>
-                        <p>Learn Python programming for data analysis, automation, and visualization.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Statistics & Analysis</h4>
-                        <p>Understand statistical concepts and their application in business decisions.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Business Analysis</h4>
-                        <p>Master business analysis techniques, requirements gathering, and stakeholder management.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Data Analysis</h4>
-                        <p>Apply analytical skills to solve real business problems and drive insights.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Portfolio Projects</h4>
-                        <p>Build a strong portfolio with industry-relevant projects and case studies.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Resume Building</h4>
-                        <p>Create a professional resume that highlights your skills and projects.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Interview Preparation</h4>
-                        <p>Prepare for technical and HR interviews with mock sessions and guidance.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Placement Assistance</h4>
-                        <p>Get placed in top companies with our dedicated placement support.</p>
                     </div>
                 </div>
             </div>
