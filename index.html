@@ -32,6 +32,53 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        /* Override hero title styling for simple white text */
+        .hero .hero-title {
+            color: white !important;
+            font-weight: 600 !important;
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: white !important;
+            background-clip: unset !important;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+            animation: none !important;
+            filter: none !important;
+            transform: none !important;
+        }
+        
+        /* Professional hero background - Option A (Recommended) */
+        header.homepage-hero {
+            background: linear-gradient(135deg, #0F172A, #1E293B, #334155) !important;
+        }
+        
+        /* Ensure hero subtitle remains readable with new background */
+        header.homepage-hero .hero-subtitle {
+            color: #CBD5E1 !important;
+        }
+        
+        /* Hero-specific CTA button styling for improved visibility */
+        header.homepage-hero .hero-buttons a.hero-enroll-btn {
+            background: #F59E0B !important;
+            color: #FFFFFF !important;
+            border-color: #F59E0B !important;
+            box-shadow: 0 4px 6px rgba(245, 158, 11, 0.3) !important;
+        }
+        
+        header.homepage-hero .hero-buttons a.hero-enroll-btn:hover {
+            background: #D97706 !important;
+            color: #FFFFFF !important;
+            border-color: #D97706 !important;
+            box-shadow: 0 6px 8px rgba(245, 158, 11, 0.4) !important;
+        }
+        
+        /* Ensure the "Explore Courses" button remains visible */
+        header.homepage-hero .hero-buttons .btn-primary {
+            background: linear-gradient(135deg, #3B82F6, #2563EB) !important;
+            color: white !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Astar Blockchain Background Elements -->
@@ -149,15 +196,15 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" role="banner">
+    <header class="hero homepage-hero" role="banner">
         <div class="container">
             <div class="text-center">
                 <div class="hero-content">
-                    <h1 class="hero-title bright-title">Become a Job-Ready Business Analyst & Data Analyst</h1>
+                    <h1 class="hero-title">Become a Job-Ready Business Analyst & Data Analyst</h1>
                     <p class="hero-subtitle">Master Excel, SQL, Power BI, Tableau, Python, Statistics, AI Tools and Real Business Projects. Learn from industry experts and transform your career.</p>
                     <div class="hero-buttons">
                         <a href="courses.html" class="btn btn-primary btn-lg">Explore Courses</a>
-                        <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-secondary btn-lg" target="_blank">Enroll Now</a>
+                        <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-secondary btn-lg hero-enroll-btn" target="_blank">Enroll Now</a>
                     </div>
                 </div>
             </div>

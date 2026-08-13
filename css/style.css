@@ -1153,6 +1153,61 @@ a:hover {
     border: 1px solid var(--color-border);
 }
 
+/* Feature list styling */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.feature-list li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-success);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Course footer styling */
+.course-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+    width: 100%;
+}
+
+/* Ensure button is on the right side in course footer */
+.course-footer .btn {
+    margin-left: auto;
+}
+
+/* Course category card links */
+.grid-4 a.card {
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--transition-base);
+}
+
+.grid-4 a.card:hover {
+    transform: translateY(-8px) translateZ(20px) rotateX(2deg);
+    box-shadow: var(--shadow-3d-lg);
+    text-decoration: none;
+}
+
+.grid-4 a.card:hover::before {
+    opacity: 1;
+}
+
 .course-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
