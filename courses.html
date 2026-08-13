@@ -23,6 +23,34 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        /* All Courses Section - Match Popular Courses styling */
+        .all-courses-section {
+            padding: var(--spacing-xl) 0 !important;
+        }
+        
+        .all-courses-section .section-header {
+            margin-bottom: var(--spacing-lg) !important;
+        }
+        
+        .all-courses-section .course-card {
+            transform: scale(0.85);
+            transform-origin: top center;
+        }
+        
+        .all-courses-section .course-title {
+            font-size: 0.9em !important;
+        }
+        
+        .all-courses-section .course-content p {
+            font-size: 0.85em !important;
+        }
+        
+        .all-courses-section .course-meta-item {
+            font-size: 0.8em !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Astar Blockchain Background Elements -->
@@ -186,157 +214,166 @@
     </section>
 
     <!-- All Courses Section -->
-    <section class="section section-white" aria-labelledby="all-courses-heading">
+    <section class="section section-white all-courses-section" aria-labelledby="all-courses-heading">
         <div class="container">
             <div class="section-header">
                 <h2 id="all-courses-heading" class="section-title">All Courses</h2>
                 <p class="section-subtitle">Comprehensive training programs designed for career success</p>
             </div>
             <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Business Analytics Pro</h3>
-                        <p>Master business analysis fundamentals, requirements gathering, stakeholder management, and process improvement techniques.</p>
-                        <ul class="feature-list">
-                            <li>Requirements Engineering</li>
-                            <li>Stakeholder Management</li>
-                            <li>Process Optimization</li>
-                            <li>Agile & Scrum Methodologies</li>
-                        </ul>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Business Analytics Pro course illustration">BA Course</div>
+                    <div class="course-content">
+                        <span class="course-badge">Bestseller</span>
+                        <h3 class="course-title">Business Analytics Pro: From Concept to Impact</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 24 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 20 Projects</span>
+                        </div>
+                        <p>Master business analysis techniques, requirements gathering, stakeholder management, and deliver real business value.</p>
                         <div class="course-footer">
                             <span class="course-price">₹34,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Data Analytics Elite</h3>
-                        <p>Advanced data analysis techniques including statistical analysis, data visualization, and predictive modeling for business insights.</p>
-                        <ul class="feature-list">
-                            <li>Statistical Analysis</li>
-                            <li>Data Visualization</li>
-                            <li>Predictive Modeling</li>
-                            <li>Business Intelligence</li>
-                        </ul>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Data Analytics Elite course illustration">DA Course</div>
+                    <div class="course-content">
+                        <span class="course-badge">Bestseller</span>
+                        <h3 class="course-title">Data Analytics Elite: Transform Data into Decisions</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 24 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 20 Projects</span>
+                        </div>
+                        <p>Become a data analyst with expertise in Excel, SQL, Power BI, Tableau, Python, and statistical analysis.</p>
                         <div class="course-footer">
                             <span class="course-price">₹29,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Excel Wizard</h3>
-                        <p>Comprehensive Excel training from basics to advanced functions, pivot tables, data analysis, and automation with VBA.</p>
-                        <ul class="feature-list">
-                            <li>Advanced Functions</li>
-                            <li>Pivot Tables & Charts</li>
-                            <li>Data Analysis Tools</li>
-                            <li>VBA Automation</li>
-                        </ul>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Excel Wizard course illustration">Excel</div>
+                    <div class="course-content">
+                        <span class="course-badge">Popular</span>
+                        <h3 class="course-title">Excel Wizard: Advanced Data Automation</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 6 Weeks</span>
+                            <span class="course-meta-item">📊 Intermediate</span>
+                            <span class="course-meta-item">🎯 5 Projects</span>
+                        </div>
+                        <p>Master advanced Excel functions, pivot tables, macros, VBA, and data visualization techniques.</p>
                         <div class="course-footer">
                             <span class="course-price">₹4,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>SQL Ninja</h3>
-                        <p>Master SQL database skills including query writing, database design, performance optimization, and data manipulation.</p>
-                        <ul class="feature-list">
-                            <li>Query Writing & Optimization</li>
-                            <li>Database Design</li>
-                            <li>Data Manipulation</li>
-                            <li>Advanced SQL Functions</li>
-                        </ul>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="SQL Ninja course illustration">SQL</div>
+                    <div class="course-content">
+                        <span class="course-badge">Trending</span>
+                        <h3 class="course-title">SQL Ninja: Database Mastery for Analysts</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 4 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 8 Projects</span>
+                        </div>
+                        <p>Learn SQL from scratch to advanced level including joins, subqueries, optimization, and database design.</p>
                         <div class="course-footer">
                             <span class="course-price">₹7,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Power BI Pro</h3>
-                        <p>Create stunning interactive dashboards, data models, and reports using Microsoft Power BI for business intelligence.</p>
-                        <ul class="feature-list">
-                            <li>Dashboard Creation</li>
-                            <li>Data Modeling</li>
-                            <li>DAX Calculations</li>
-                            <li>Report Publishing</li>
-                        </ul>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Power BI Pro course illustration">Power BI</div>
+                    <div class="course-content">
+                        <span class="course-badge">New</span>
+                        <h3 class="course-title">Power BI Pro: Visual Intelligence for Business</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 6 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 6 Projects</span>
+                        </div>
+                        <p>Create stunning interactive dashboards, DAX formulas, data modeling, and business intelligence solutions.</p>
                         <div class="course-footer">
                             <span class="course-price">₹9,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Tableau Titan</h3>
-                        <p>Build powerful data visualizations and dashboards with Tableau, from basic charts to complex analytical views.</p>
-                        <ul class="feature-list">
-                            <li>Data Visualization</li>
-                            <li>Dashboard Design</li>
-                            <li>Advanced Calculations</li>
-                            <li>Storytelling with Data</li>
-                        </ul>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Tableau Titan course illustration">Tableau</div>
+                    <div class="course-content">
+                        <span class="course-badge">Popular</span>
+                        <h3 class="course-title">Tableau Titan: Data Storytelling Masterclass</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 6 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 6 Projects</span>
+                        </div>
+                        <p>Master Tableau for data visualization, create compelling stories, and build interactive dashboards.</p>
                         <div class="course-footer">
                             <span class="course-price">₹9,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Python Powerhouse</h3>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Python Powerhouse course illustration">Python</div>
+                    <div class="course-content">
+                        <span class="course-badge">Trending</span>
+                        <h3 class="course-title">Python Powerhouse: Analytics & Automation</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 12 Weeks</span>
+                            <span class="course-meta-item">📊 Intermediate</span>
+                            <span class="course-meta-item">🎯 10 Projects</span>
+                        </div>
                         <p>Learn Python programming for data analysis, including pandas, numpy, matplotlib, and machine learning fundamentals.</p>
-                        <ul class="feature-list">
-                            <li>Python Fundamentals</li>
-                            <li>Data Analysis Libraries</li>
-                            <li>Machine Learning Basics</li>
-                            <li>Automation Scripts</li>
-                        </ul>
                         <div class="course-footer">
-                            <span class="course-price">₹14,999</span>
+                            <span class="course-price">₹11,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>AI Edge</h3>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="AI Edge course illustration">AI</div>
+                    <div class="course-content">
+                        <span class="course-badge">New</span>
+                        <h3 class="course-title">AI Edge: Future-Ready Analytics Tools</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 6 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 6 Projects</span>
+                        </div>
                         <p>Stay ahead with AI tools and technologies for business analysis, including ChatGPT, automation, and intelligent workflows.</p>
-                        <ul class="feature-list">
-                            <li>AI Tools Integration</li>
-                            <li>Process Automation</li>
-                            <li>Intelligent Workflows</li>
-                            <li>Future-Ready Skills</li>
-                        </ul>
                         <div class="course-footer">
-                            <span class="course-price">₹7,999</span>
+                            <span class="course-price">₹9,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Communication Command</h3>
+                </article>
+                <article class="course-card">
+                    <div class="course-image" role="img" aria-label="Communication Command course illustration">Comm</div>
+                    <div class="course-content">
+                        <span class="course-badge">Popular</span>
+                        <h3 class="course-title">Communication Command: Professional Impact</h3>
+                        <div class="course-meta">
+                            <span class="course-meta-item">⏱ 4 Weeks</span>
+                            <span class="course-meta-item">📊 Beginner to Advanced</span>
+                            <span class="course-meta-item">🎯 4 Projects</span>
+                        </div>
                         <p>Enhance your professional communication skills, presentation abilities, and stakeholder management for career success.</p>
-                        <ul class="feature-list">
-                            <li>Professional Communication</li>
-                            <li>Presentation Skills</li>
-                            <li>Stakeholder Management</li>
-                            <li>Interview Preparation</li>
-                        </ul>
                         <div class="course-footer">
-                            <span class="course-price">₹4,999</span>
+                            <span class="course-price">₹6,999</span>
                             <a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="btn btn-primary btn-sm" target="_blank">Enroll Now</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
