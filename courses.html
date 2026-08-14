@@ -173,11 +173,6 @@
                 </li>
                 <li><a href="https://forms.gle/iwckm2vEz6w3dY9Y9" class="navbar-cta" target="_blank">Enroll Now</a></li>
             </ul>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
-                </svg>
-            </button>
         </div>
     </nav>
 
@@ -506,28 +501,6 @@
         document.addEventListener('click', function(e) {
             if (!e.target.closest('.nav-dropdown')) {
                 closeAllDropdowns();
-            }
-        });
-
-        // Theme Toggle Script
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            body.setAttribute('data-theme', 'dark');
-        }
-        
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            if (currentTheme === 'dark') {
-                body.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
             }
         });
     </script>

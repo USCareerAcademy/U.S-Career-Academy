@@ -77,11 +77,6 @@ body>
         </div>
     </header>
 
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
-        <span id="theme-icon">🌙</span>
-    </button>
-
     <!-- Refund Policy Content -->
     <section class="section section-white" aria-labelledby="policy-heading">
         <div class="container">
@@ -701,51 +696,9 @@ body>
             position: relative;
             z-index: 1;
         }
-        
-        /* Theme Toggle Button */
-        .theme-toggle {
-            position: fixed;
-            top: var(--spacing-lg);
-            right: var(--spacing-lg);
-            z-index: 1000;
-            background: #ffffff;
-            border: 2px solid #E2E8F0;
-            border-radius: var(--radius-full);
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all var(--transition-base);
-            box-shadow: var(--shadow-md);
-            font-size: 20px;
-        }
-        
-        .theme-toggle:hover {
-            transform: scale(1.1);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        [data-theme="dark"] .theme-toggle {
-            background: #1E293B;
-            border-color: #334155;
-        }
     </style>
 
     <script>
-        // Theme Toggle Functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to light
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', currentTheme);
-
-        // Update toggle button icon based on current theme
-        function updateThemeIcon(theme) {
-            const themeIcon = document.getElementById('theme-icon');
-            if (themeIcon) {
                 if (theme === 'dark') {
                     themeIcon.textContent = '☀️';
                 } else {
